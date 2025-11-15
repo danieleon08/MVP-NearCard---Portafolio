@@ -1,5 +1,7 @@
+/* --- ESTRUCTURA GENERAL --- */
 .about {
-  padding: 80px 0;
+  padding: 100px 0;
+  background: var(--secondary-color);
 }
 
 .container {
@@ -8,18 +10,95 @@
   padding: 0 20px;
 }
 
-
 .about-content {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
+/* --- IMAGEN --- */
+.about-image img {
+  max-width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform .4s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
+}
+
+/* --- TEXTO --- */
 .about-text {
   flex: 1;
+  min-width: 300px;
+  color-text: var(--background-color);
 }
 
-.about-image img {
-  max-width: 300px;
-  border-radius: 10px;
+.title{
+  color: var(--background-color);
+}
+
+.title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* --- BOTÓN --- */
+.btn-show {
+  background: black;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: .3s ease;
+}
+
+.btn-show:hover {
+  transform: translateY(-3px);
+  background: #222;
+}
+
+/* --- SKILLS CLOUD (nubecitas) --- */
+.skills-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-tag {
+  background: var(--background-color);
+  border: 1px solid #ddd;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: .3s ease;
+}
+
+.skill-tag:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* --- ANIMACIONES SCROLL REVEAL --- */
+.section-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+.section-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
 }
