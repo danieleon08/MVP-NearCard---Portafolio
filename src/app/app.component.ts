@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Header } from './header/header';
 import { Presentation } from './presentation/presentation';
-import { About } from './about/about';
+import { AboutMe } from './aboutme/aboutme';
 import { Tech } from './tech/tech';
 import { Projects } from './projects/projects';
 import { Courses } from './courses/courses';
@@ -15,7 +15,7 @@ import { Footer } from './footer/footer';
   imports: [
     Header,
     Presentation,
-    About,
+    AboutMe,
     Tech,
     Projects,
     Courses,

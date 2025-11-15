@@ -41,5 +41,12 @@
 }
 
 .btn-primary {
+  background-image: none;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  box-shadow: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
   align-self: center;
 }

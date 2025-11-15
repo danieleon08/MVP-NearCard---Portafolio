@@ -24,7 +24,7 @@
 }
 
 .project-card {
-  background-color: white;
+  background-color: var(--card-background);
   border-radius: 10px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -80,3 +80,15 @@
   display: flex;
   gap: 20px;
 }
+
+.project-links .btn {
+  background-image: none;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  box-shadow: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+  

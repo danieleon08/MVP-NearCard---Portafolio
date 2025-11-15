@@ -1,7 +1,7 @@
 .footer {
   padding: 40px 0;
-  background-color: var(--primary-color);
-  color: white;
+  background-color: var(--background-color);
+  color: var(--primary-color);
 }
 
 .container {
