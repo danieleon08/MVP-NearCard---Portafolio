@@ -1,0 +1,31 @@
+<section class="courses-section">
+  <h2 class="section-title">Cursos y Educación</h2>
+  <div class="carousel-container">
+    <div class="carousel-track">
+      @for (course of courses(); track course.title) {
+        <div class="card">
+          <img [src]="course.image" [alt]="course.title" class="card-image" />
+          <div class="card-content">
+            <h3 class="card-title">{{ course.title }}</h3>
+            <div class="card-details">
+              <div class="detail-item">
+                <strong>{{ course.completion }}</strong>
+                <span>Completado</span>
+              </div>
+              <div class="detail-item">
+                <strong>{{ course.certificate }}</strong>
+                <span>Certificado</span>
+              </div>
+              <div class="detail-item">
+                <strong>{{ course.modality }}</strong>
+                <span>Modalidad</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+    <button class="carousel-arrow prev">&#10094;</button>
+    <button class="carousel-arrow next">&#10095;</button>
+  </div>
+</section>

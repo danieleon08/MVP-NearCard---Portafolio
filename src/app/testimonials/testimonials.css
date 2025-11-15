@@ -1,0 +1,44 @@
+.testimonials {
+  padding: 60px 0;
+}
+
+.testimonial-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.testimonial-item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.testimonial-info .name {
+  font-weight: bold;
+  display: block;
+}
+
+.testimonial-info .company {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #333;
+}

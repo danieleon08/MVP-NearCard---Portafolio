@@ -1,0 +1,19 @@
+<section id="testimonials" class="testimonials">
+  <div class="container">
+    <h2>Testimonials</h2>
+    <div class="testimonial-list">
+      @for (testimonial of testimonials(); track testimonial.name) {
+        <div class="testimonial-item">
+          <div class="testimonial-header">
+            <img [src]="testimonial.avatar" alt="{{ testimonial.name }}" class="avatar">
+            <div class="testimonial-info">
+              <span class="name">{{ testimonial.name }}</span>
+              <span class="company">{{ testimonial.company }}</span>
+            </div>
+          </div>
+          <p class="testimonial-text">"{{ testimonial.text }}"</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
